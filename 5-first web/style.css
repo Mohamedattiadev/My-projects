@@ -1,0 +1,122 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+position: relative;
+
+}
+/* globall css */
+.obj-width{
+max-width: 1200px;
+  margin:0 30px;
+}
+
+
+nav{
+background-color: blueviolet;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+.navbar{
+display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar .logo{
+color: white;
+  font-size:30px;
+  text-decoration: none;
+
+}
+ #search-input{
+  max-width: 400px;
+padding: 10px 20px;
+  border:none;
+  border-radius:18px;
+ color: #333; 
+}
+#search-button{
+  background-color: paleturquoise;
+  cursor: pointer;
+  margin-left: 10px;
+max-width: 100px;
+  padding: 10px 20px;
+  border-radius:18px;
+  border:none;
+}
+
+#blog-container{
+padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center ;
+  align-items: center;
+  margin: 0;
+}
+.blog-card{
+width:300px;
+  border: 1px solid blanchedalmond;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+
+}
+.blog-card:hover{
+
+box-shadow:4px 8px 10px rgba(0, 0, 0, .1);
+}
+.blog-card img{
+width: 100%;
+height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom:10px;
+  
+
+}
+.blog-card h2{
+
+color: black;
+  font-size: 30px;
+}
+.blog-card p{
+color: gray;
+ font-size: 13px; 
+
+}
+@media (max-width: 500px) {
+  nav{
+padding: 0 10px;
+  }
+.navbar .logo{
+font-size: 1.2rem;
+
+  }
+  #search-input{
+
+width: 90px;
+    padding: 10px 5px;
+  }
+  obj-width {
+    margin:  0px;
+}
+  #search-button {
+    margin-left: 0px;
+    padding: 10px 5px;
+}
+.blog-card{
+
+    width: 350px;
+  }
+#blog-container {
+    justify-content: center;
+    align-items: center;
+}
+}

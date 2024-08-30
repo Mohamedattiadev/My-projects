@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --clr-blue: #1A91F0;
+    --clr-blue-mid: #1170CD;
+    --clr-blue-dark: #1A1C6A;
+    --clr-white: #fff;
+    --clr-bright: #EFF2F9;
+    --clr-dark: #1e2532;
+    --clr-black: #000;
+    --clr-grey: #656e83;
+    --clr-green: #084C41;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;;
+    --transition: all 300ms ease-in-out;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+display: flex;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+.logo{
+width: 40px;
+
+}
+.links a{
+text-decoration: none;
+color: white;
+font-size: 15px;
+font-family: var(--font-manrope);
+margin:0 5px
+}
+
+.links button{
+padding: 5px 10px;
+
+margin: 0 5px;
+border: none;
+border-radius: 8px;
+box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+}
+.links a:hover{
+text-decoration: underline;
+color: blueviolet;
+
+}
+
+.landing-page{
+
+display: flex;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 5px;
+}
+.landing-left{
+color: white;
+
+}
+.landing-left p,h1{
+margin: 10px 0;
+
+}
+.landing-left button,input{
+
+padding: 8px 16px;
+border:none;  
+border-radius: 10px;
+}
+.langing-right img{
+width:530px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TODO-IT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- --------------header container----------- -->
+    <nav class="header-container pa">
+      <div class="logo">
+        <h2>
+          <a href="index.html">
+            <span>TODO-IT</span>
+          </a>
+        </h2>
+      </div>
+
+      <div class="nav">
+        <a href="index.html" class="nav-link hover">home</a>
+        <a href="aboutUs.html" class="nav-link hover">about what!</a>
+        <i class="fa-solid fa-bars icons  bars-tree  hover "></i>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar hidden">
+        <!-- Sidebar content goes here -->
+        <!--TODO: add x to exit it  -->
+        <i class="fa-solid fa-xmark  hover exit"></i>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutUs.html" class="nav-link">About</a>
+        <!-- Add more links or content as needed -->
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- --------------main container----------- -->
+  <main class="main-container pa">
+    <div class="main-text">
+
+      <h3>Today --- ---</h3>
+    </div>
+    <div class="explaintion-text">
+
+      <p>Welcome to my website! If this is your first time here, you're in for a treat. This site is designed to help
+        you stay organized and productive with a suite of tools that includes a robust todo list, a visual Kanban list
+        for managing tasks, and a convenient notes list for capturing all your important thoughts and ideas. Take a
+        moment to explore each feature and see how they can make your daily workflow smoother and more efficient. I hope
+        you find everything you need to stay on top of your tasks!</p>
+    </div>
+    <!-- --------------timer----------- -->
+    <div class="timer-section">
+      <span class="toggle-timer-section "><i class="  fa-solid fa-stopwatch icons"></i></span>
+      <div class="after-toggle hidden">
+        <span class="split-icon">|</span>
+        <span class="time-element-input "><input class="minute-input" type="number" max="60" min="0"> : <input
+            class="second-input" type="number" max="60" min="0"></span>
+        <span class="time-element hidden"></span>
+        <span class="split-icon">|</span>
+        <span class="restart-element hidden"> <i class="fa-solid fa-arrow-rotate-right icons"></i></span>
+        <span class="start-element">
+          <i class="fa-solid fa-play icons"></i>
+        </span>
+        <span class="split-icon">|</span>
+        <span class="stop-element hidden"><i class="fa-solid fa-stop icons"></i></span>
+
+      </div>
+      <!-- ===================alert==============-->
+      <div class="alert  hidden">
+        <h4 class="alert-title"><span></span>Time Is Up...</h4>
+        <p class="alert-content">this message will disappear after 5</p>
+        <!-- <div class="progress-display">...</div> -->
+        <div class="progress"></div>
+      </div>
+    </div>
+  </main>
+
+  <div class="btns-Container">
+    <div class="button-container real-btns pa ">
+      <button class="btn toDo" type="button"><span class="btn-text">ToDo</span> <span class="btn-icons"><i
+            class="fa-sharp fa-solid fa-square-check btn-icon"></i></span></button>
+      <button class="btn notes" type="button"><span class="btn-text">Notes</span> <span class="btn-icons">
+          <i class="fa-sharp fa-solid fa-note-sticky btn-icon"></i></span></button>
+      <button class="btn workspace" type="button"><span class="btn-text">Kanban</span> <span class="btn-icons"><i
+            class="fa-sharp fa-solid fa-list-check btn-icon"></i></span></button>
+    </div>
+
+  </div>
+  <!--todo section -->
+  <form class="click-todo hidden pa">
+    <div>
+      <input type="text" class="add-todo" placeholder="add a new task">
+    </div>
+
+    <div> <button class="add-click btn">+</button></div>
+  </form>
+
+  <div class="todos-add hidden pa">
+
+  </div>
+  <!--notes section -->
+
+  <div class="notes-add hidden pa">
+    <button class="add-note-btn hover"><span>+</span></button>
+  </div>
+  <!--workspaces section ---------------------------->
+  <!--  ------------------------------------------------->
+
+  <form class=" workspace-todo pa hidden">
+    <input type="text" class=" workspace-input" placeholder="add a new task">
+    <div> <button class=" btn workspace-btn">+</button></div>
+  </form>
+
+  <!--  ------------------------------------------------->
+  <div class="workspace-section pa hidden">
+
+    <div class="todo-part box space-style">
+      <span class="space-header">to-DO</span>
+      <div class="workspace-notes">
+
+      </div>
+    </div>
+
+    <div class="continue-part box space-style  ">
+      <span class="space-header">progress</span>
+      <div class="workspace-notes progress-notes">
+      </div>
+    </div>
+
+    <div class="done-part box space-style">
+      <span class="space-header">done</span>
+      <div class="workspace-notes">
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
